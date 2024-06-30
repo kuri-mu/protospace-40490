@@ -26,6 +26,7 @@ class PrototypesController < ApplicationController
     end
   
     def edit
+        @prototype = Prototype.find(prototype_params)
     end
   
     def update
